@@ -20,17 +20,17 @@
 
 ## [包含设备](https://github.com/OS-Q/W15/wiki) 
 
-#### D99：[NULL](https://github.com/OS-Q/D99)
+#### D99：[CC1101](https://github.com/OS-Q/D99)
 
+TI公司出品的工作在低于1GHz频段的无线数传芯片
 
+#### D100：[SI4432](https://github.com/OS-Q/D100)
 
-#### D100：[NULL](https://github.com/OS-Q/D100)
+Silicon Labs公司推出集成度、低功耗、多频段无线收发芯片，最大功率可以到20dBm（100mw），接收灵敏度可以到-121dbm
 
+#### D101：[SX1278](https://github.com/OS-Q/D101)
 
-
-#### D101：[NULL](https://github.com/OS-Q/D101)
-
-
+Semtech SX1278是半双工传输的低中频收发器，包含LoRa调制，SX1278支持的频段为137-525MHz
 
 #### D102：[NULL](https://github.com/OS-Q/D102)
 
