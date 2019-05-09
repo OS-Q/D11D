@@ -6,6 +6,7 @@
 Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 ### [平台描述](https://github.com/OS-Q/D99/wiki) 
 
+无线管道平台，作为无线射频数据调制设备，完成数据的管道通信
 
 ### [平台资源](https://github.com/OS-Q/D99) 
 
@@ -20,10 +21,10 @@ Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 		* D99：[433MHz](https://github.com/OS-Q/D99)
 		* D100：[915MHz](https://github.com/OS-Q/D100)
 		* D101：[LoRa](https://github.com/OS-Q/D101)
-		* D102：[NULL](https://github.com/OS-Q/D102)
-		* D103：[NULL](https://github.com/OS-Q/D103)
-		* D104：[NULL](https://github.com/OS-Q/D104)
-		* D105：[NULL](https://github.com/OS-Q/D105)
+		* D102：[2.4GHz](https://github.com/OS-Q/D102)
+		* D103：[5.8GHz](https://github.com/OS-Q/D103)
+		* D104：[RFID](https://github.com/OS-Q/D104)
+		* D105：[FM](https://github.com/OS-Q/D105)
 	* W16：[射频转换](https://github.com/OS-Q/W16)
 	* W17：[信号增强](https://github.com/OS-Q/W17)
 
