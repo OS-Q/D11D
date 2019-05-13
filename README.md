@@ -1,4 +1,4 @@
-﻿# [无线管道](https://github.com/OS-Q/W15)
+﻿# [无线调制](https://github.com/OS-Q/W15)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 #### qitas@qitas.cn
 #### 归属通信管道：[M4](https://github.com/OS-Q/M4)
@@ -22,7 +22,7 @@ Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 
 * M4：[通信管道](https://github.com/OS-Q/M4)
 	* W14：[电气转换](https://github.com/OS-Q/W14)
-	* W15：射频调制
+	* W15：无线调制
 		* D99：[Sub1GHz-L](https://github.com/OS-Q/D99)
 		* D100：[Sub1GHz-A](https://github.com/OS-Q/D100)
 		* D101：[LoRa](https://github.com/OS-Q/D101)
@@ -30,7 +30,7 @@ Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
 		* D103：[2.4GHz-A](https://github.com/OS-Q/D103)
 		* D104：[IR-L](https://github.com/OS-Q/D104)
 		* D105：[IR-A](https://github.com/OS-Q/D105)
-	* W16：[射频转换](https://github.com/OS-Q/W16)
+	* W16：[频道转换](https://github.com/OS-Q/W16)
 	* W17：[信号增强](https://github.com/OS-Q/W17)
 
 
