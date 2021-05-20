@@ -1,0 +1,52 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  arduino:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+      - uses: Qful/arduino-action@master
+
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        examples:
+          - "test"
+        package: ["pio","qio"]
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+
+      - name: Install qio
+        if: matrix.package == 'qio'
+        run: |
+          pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
+          qio platform install https://github.com/OS-Q/P111/archive/master.zip
+
+      - name: Install pio
+        if: matrix.package == 'pio'
+        run: |
+          pip install -U https://github.com/platformio/platformio/archive/develop.zip
+          pio platform install https://github.com/OS-Q/P111/archive/master.zip
+
+      - name: Build
+        if: success()
+        run: |
+          pio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/${{ matrix.examples }}/${{ matrix.examples }}.ino
+
